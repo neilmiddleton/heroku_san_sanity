@@ -1,0 +1,1 @@
+require 'heroku_san_sanity/railtie' if defined?(Rails)
