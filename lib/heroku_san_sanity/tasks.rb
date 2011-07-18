@@ -15,7 +15,7 @@ end
 def check_heroku_integrity(name)
   doc = Hpricot(open("http://status.heroku.com/"))
   incident = doc.search("li.yellow, li.red")
-  if incident.present?
+  if incident.size != 0
     puts ""
     puts " !    WARNING: Potentially Unstable Deploy"
     puts " !    "
