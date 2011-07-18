@@ -3,7 +3,9 @@ heroku_san_sanity
 
 heroku_san_sanity is a sibling task to the heroku_san gem
 
-If you are deploying with Heroku_san, Heroku_san_sanity will sense check all production deploys with an 'Are you sure?' message
+If you are deploying with Heroku_san, Heroku_san_sanity will sense check all production deploys with an 'Are you sure?' message.
+
+heroku_san_sanity now also checks the status of the heroku platform prior to a deploy, and asks if you want to continue should the platform not be reported as healthy.
 
 Installation
 ------------
