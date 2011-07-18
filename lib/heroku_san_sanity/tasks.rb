@@ -31,8 +31,7 @@ end
 
 desc 'Force sanity check on production deploys'
 task :before_deploy => :environment do |name, t, args|
-  return false if !check_heroku_integrity(name)
-  
+  check_heroku_integrity(name)
   each_heroku_app do |name, app, repo|
     if name == 'production' && @exec == false
       puts ""
