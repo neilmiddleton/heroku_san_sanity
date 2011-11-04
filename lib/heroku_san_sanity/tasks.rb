@@ -1,5 +1,6 @@
 require "highline/import"
 require 'hpricot'
+require 'open-uri'
 
 @exec = false
 
