@@ -14,7 +14,7 @@ def check_answer(answer, name)
 end
 
 def check_heroku_integrity(name)
-  doc = Hpricot(open("http://status.heroku.com/"))
+  doc = Hpricot(open("https://status.heroku.com/"))
   incident = doc.search("li.yellow, li.red")
   if incident.size != 0
     puts ""
