@@ -25,7 +25,7 @@ def check_heroku_integrity(name)
     puts ""
     puts " !    To continue, type \"OK\""
     puts ""
-    answer = ask("> ", String)
+    answer = ask("> ")
     check_answer(answer.downcase, "ok")
   end
 end
@@ -40,7 +40,7 @@ task :before_deploy => :environment do |name, t, args|
       puts " !    This command will affect the environment: #{name}"
       puts " !    To proceed, type \"#{name}\""
       puts ""
-      answer = ask("> ", String)
+      answer = ask("> ")
       check_answer(answer, name)
     end
   end
