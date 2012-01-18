@@ -13,7 +13,7 @@ Installation
 Add the following to your Gemfile:
 
     group :development do  
-      gem 'herok_san_sanity'  
+      gem 'heroku_san_sanity'  
     end
 
 This gem must only be used in applications that use Heroku.
